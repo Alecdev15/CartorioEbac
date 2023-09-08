@@ -123,7 +123,8 @@ int main()
 		printf("Selecione o funcionário apto para a promoção:\n\n");
 		printf("\t1 - Registrar funcionário:\n");
 		printf("\t2 - Consultar funcionário:\n");
-		printf("\t3 - Remover funcionário:\n\n"); 
+		printf("\t3 - Remover funcionário:\n"); 
+		printf("\t4 - Sair do sistema\n\n"); 
 		printf("Opção: "); //Fim do Menu
 		
 		scanf("%d", &opcao); // Início da seleção
@@ -143,6 +144,11 @@ int main()
 			case 3:
 			deletar();
 			break;
+			
+			case 4:
+			printf("Obrigado por utilizar nosso sistema!\n");
+			return 0;
+			break;	
 			
 			default:
 			printf("Está opção não está disponível, provavelmente você se enganou T.T\n"); //Fim da seleção
